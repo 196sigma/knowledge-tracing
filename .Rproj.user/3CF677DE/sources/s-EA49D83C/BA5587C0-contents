@@ -1,0 +1,6 @@
+rm(list=ls())
+gc()
+
+X <- read.csv("data/raw/skill_builder_data_corrected_collapsed.csv", stringsAsFactors = FALSE)
+names(X)
+X.70363 <- X[X$user_id == 70363, ]
